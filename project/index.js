@@ -8,10 +8,10 @@ mongoose.connect('mongodb://localhost/gh2951');
 mongoose.set('debug', true);
 
 // This works fine
-var userSchema = new Schema({
-  name: String,
-  community_id: {type: mongoose.Schema.Types.ObjectId, ref: 'community'}
-});
+// var userSchema = new Schema({
+//   name: String,
+//   community_id: {type: mongoose.Schema.Types.ObjectId, ref: 'community'}
+// });
 
 // If the schema is instead created in a module with
 // a separate mongoose instance, it doesn't work
